@@ -23,26 +23,27 @@ class _PointsCounterState extends State<PointsCounter> {
         appBar: AppBar(
           backgroundColor: Colors.orange,
           title: const Text(
-            "Points Counter",
+            "BasketBall Points Counter",
           ),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
                     const Text(
-                      "team A",
+                      "Team A",
                       style:
                           TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "$teamAPoints",
                       style: const TextStyle(
-                        fontSize: 150,
+                        fontSize: 170,
                       ),
                     ),
                     ElevatedButton(
@@ -115,14 +116,14 @@ class _PointsCounterState extends State<PointsCounter> {
                 Column(
                   children: [
                     const Text(
-                      "team B",
+                      "Team B",
                       style:
                           TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "$teamBPoints",
                       style: const TextStyle(
-                        fontSize: 150,
+                        fontSize: 170,
                       ),
                     ),
                     ElevatedButton(
@@ -186,9 +187,7 @@ class _PointsCounterState extends State<PointsCounter> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 70,
-            ),
+            const Spacer(flex: 2,),
             ElevatedButton(
                 onPressed: () {
                   setState(() {
@@ -207,6 +206,7 @@ class _PointsCounterState extends State<PointsCounter> {
                     fontSize: 18,
                   ),
                 )),
+            const Spacer(flex: 4,),
           ],
         ),
       ),
